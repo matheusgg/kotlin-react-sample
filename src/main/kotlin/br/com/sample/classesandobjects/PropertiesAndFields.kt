@@ -93,7 +93,7 @@ class Service {
     /*
      * Por padrao, propriedades com um tipo nao nulo devem ser inicializadas na declaracao ou no construtor.
      *
-     * Para nao inicializa-as basta adicionar o modificador lateinit, isso permite que a propriedade possa
+     * Para nao inicializa-las basta adicionar o modificador lateinit, isso permite que a propriedade possa
      * ser inicializada em um momento futuro (indicado para uso com injecao de dependencias).
      *
      * lateinit so pode ser aplicado para propriedades declaradas com var e que nao possuam getters e setters customizados
@@ -103,7 +103,7 @@ class Service {
     fun showUrl() {
         println(url)
 
-        // Para chegar se uma propriedade lateinit esta inicializada basta acessar a referencia para essa propriedade
+        // Para checar se uma propriedade lateinit esta inicializada basta acessar a referencia para essa propriedade
         println(this::url.isInitialized)
     }
 }

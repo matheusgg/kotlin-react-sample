@@ -17,7 +17,7 @@ class Outer {
     }
 
     /**
-     * Inner class carrega uma referencia da outer class, dessa forma é porssivel acessar seus membros
+     * Inner classes carregam uma referencia para a outer class, dessa forma é possivel acessar seus membros
      */
     inner class Inner {
         fun foo() = prop

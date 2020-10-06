@@ -82,7 +82,7 @@ fun main(args: Array<String>) {
     var d: String? = "Teste"
     println(d!!.length)
     d = null
-    println(d!!.length)
+//    println(d!!.length) // Erro de compilacao pois a referencia d esta nula
 }
 
 data class Employer(val name: String?, var data: EmployerData?)
